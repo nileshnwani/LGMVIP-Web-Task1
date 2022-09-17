@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: yellow;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.container{
+    background: black;
+    border-radius: 20px;
+    padding: 35px;
+    margin: 190px auto;
+    max-width: 600px;
+}
+
+.container h1{
+    font-size: 45px;
+    color: #fff;
+}
+
+.container .input{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    margin: 25px 0px;
+}
+
+.input input{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    padding-left: 20px;
+    font-size: 25px;
+    outline: none;
+    transition: all 0.5s ease;
+}
+
+.input input :focus{
+    border-color:#1d1e30;
+}
+
+.input button{
+    outline: none;
+    background: #f10202;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 25px;
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    cursor: pointer;
+    opacity: 0.4;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+
+/* .input button :hover{
+    background: #1d1e30;
+} */
+
+.input button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.container .footer{
+    display: flex;
+    justify-content: space-between;
+    color: #ccc;
+    font-size: 25px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.footer button{
+    background: #f10202;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    user-select: none;
+    opacity: 0.4;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+
+.footer button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.container .tasks{
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.tasks li{
+    position: relative;
+    list-style: none;
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 0 17px;
+    height: 45px;
+    line-height: 45px;
+    cursor: default;
+    overflow: hidden;
+}
+
+.tasks li .icon{
+    position: absolute;
+    right: -45px;
+    background: #f02;
+    width: 45px;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tasks li:hover .icon{
+    right: 0px;
+  }
